@@ -8,7 +8,6 @@ function init() {
     clock = 8
     
     $("#question").html(questions[0])
-    $("#question").attr("")
     $("#True").append("True")
     $("#False").append("False")
 }
@@ -59,7 +58,7 @@ setInterval(function(){
         $("#timer").html("Shot Clock: " + clock)
         if(clock === 0){
             $("#answer").html("Time's up!")
-            $("#answer").append("The correct answer was " + answers[i])
+            $("#answer").append("<br>The correct answer was " + answers[i])
             moveOn()
     }
     }
@@ -81,7 +80,7 @@ function clear(){
 
 function gameOver(){
     $("#result").html("<h1>You got " + pts + " correct!</h1> <br>")
-    $("#result").append("<img src='https://media.giphy.com/media/9lMoyThpKynde/giphy.gif'> <br>")
+    $("#result").append("<img id = 'gif' src='https://media.giphy.com/media/9lMoyThpKynde/giphy.gif'><br>")
     $("#result").append("<button class = 'btn btn-default' id = 'retry'>Retry?</button>")
     $("#retry").on("click", function(){
         console.log("hit")

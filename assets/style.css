@@ -1,3 +1,20 @@
+body {
+    background: url(./images/tiles.jpeg)
+}
+
+.container {
+    background-color: lightblue;
+    padding-bottom: 15px;
+}
+
+#options {
+    padding: 10px 0px 10px 0px; 
+}
+
+#gif {
+    padding: 10px 0px 10px 0px; 
+}
+
 .choice {
     display: inline;
     color: #333;
